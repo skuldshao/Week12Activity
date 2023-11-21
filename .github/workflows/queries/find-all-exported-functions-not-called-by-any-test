@@ -1,0 +1,15 @@
+import javascript
+
+predicate isExportedFunction(Function f) {
+  exists(Module m | m.getAnExportedValue(_).getAFunctionValue().getFunction() = f) and
+  not f.inExternsFile()
+}
+
+from Function exportedFunc
+where isExportedFunction(exportedFunc)
+  and not exists(CallExpr call, Function test |
+      test.getName().matches("%test%") and 
+      call.getCallee() = exportedFunc.getACall().getEnclosingFunction()
+  )
+select exportedFunc
+

@@ -1,0 +1,9 @@
+// Select the Function objects from the database
+from Function f
+
+// Filter the functions based on the number of lines greater than 10
+where f.getNumLines() > 10
+
+// Select the Function objects and their corresponding number of lines
+select f, f.getNumLines()
+
