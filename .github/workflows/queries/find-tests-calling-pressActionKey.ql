@@ -6,6 +6,8 @@
  * @problem.severity recommendation
  */
 
+// Import the JavaScript language module
+import javascript
 
 // Select all CallExpr objects named 'call' and Function objects named 'test'
 from CallExpr call, Function test

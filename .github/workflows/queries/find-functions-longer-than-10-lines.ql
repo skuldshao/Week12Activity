@@ -5,6 +5,8 @@
  * @problem.severity recommendation
  */
 
+// Import the JavaScript language module
+import javascript
 
 // Select the Function objects from the database
 from Function f
