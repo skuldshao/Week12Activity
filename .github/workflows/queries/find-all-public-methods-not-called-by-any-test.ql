@@ -1,3 +1,11 @@
+/**
+ * @description Find all public methods not called by any tests
+ * @kind problem
+ * @id javascript/find-all-public-methods-not-called-by-any-tests
+ * @problem.severity recommendation
+ */
+
+
 // Import the JavaScript language module
 import javascript
 

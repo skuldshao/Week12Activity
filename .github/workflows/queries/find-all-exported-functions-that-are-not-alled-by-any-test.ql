@@ -1,3 +1,10 @@
+/**
+ * @description find all exported functions that are not called by any test
+ * @kind problem
+ * @id javascript/find-all-exported-functions-that-are-not-alled-by-any-test
+ * @problem.severity recommendation
+ */
+
 import javascript
 
 predicate isExportedFunction(Function f) {
@@ -12,4 +19,3 @@ where isExportedFunction(exportedFunc)
       call.getCallee() = exportedFunc.getACall().getEnclosingFunction()
   )
 select exportedFunc
-

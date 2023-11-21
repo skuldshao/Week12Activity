@@ -1,3 +1,10 @@
+/**
+ * @description Find all public methods called by tests
+ * @kind problem
+ * @id javascript/find-all-public-methods-call-by-tests
+ * @problem.severity recommendation
+ */
+
 // Import the JavaScript language module
 import javascript
 

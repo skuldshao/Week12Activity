@@ -1,3 +1,12 @@
+
+/**
+ * @description Find all tests calling pressActionKey
+ * @kind problem
+ * @id javascript/find-test-calling-pressActionKey
+ * @problem.severity recommendation
+ */
+
+
 // Select all CallExpr objects named 'call' and Function objects named 'test'
 from CallExpr call, Function test
 

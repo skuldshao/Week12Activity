@@ -1,3 +1,11 @@
+/**
+ * @description find functions long than 10 lines
+ * @kind problem
+ * @id javascript/find-function-longer-than-10-lines
+ * @problem.severity recommendation
+ */
+
+
 // Select the Function objects from the database
 from Function f
 
